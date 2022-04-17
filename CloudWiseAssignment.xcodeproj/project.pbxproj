@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CE2DD24E280AFBB300CA3710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD24D280AFBB300CA3710 /* AppDelegate.swift */; };
 		CE2DD250280AFBB300CA3710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD24F280AFBB300CA3710 /* SceneDelegate.swift */; };
-		CE2DD252280AFBB300CA3710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD251280AFBB300CA3710 /* ViewController.swift */; };
+		CE2DD252280AFBB300CA3710 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD251280AFBB300CA3710 /* HomeViewController.swift */; };
 		CE2DD255280AFBB300CA3710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DD253280AFBB300CA3710 /* Main.storyboard */; };
 		CE2DD257280AFBB500CA3710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2DD256280AFBB500CA3710 /* Assets.xcassets */; };
 		CE2DD25A280AFBB500CA3710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DD258280AFBB500CA3710 /* LaunchScreen.storyboard */; };
+		CE2DD267280AFEFA00CA3710 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD266280AFEFA00CA3710 /* FormViewController.swift */; };
+		CE2DD269280B05D600CA3710 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD268280B05D600CA3710 /* User.swift */; };
+		CE2DD26B280B05E200CA3710 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD26A280B05E200CA3710 /* HttpManager.swift */; };
+		CE2DD26D280B080300CA3710 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD26C280B080300CA3710 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2DD24A280AFBB300CA3710 /* CloudWiseAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudWiseAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2DD24D280AFBB300CA3710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2DD24F280AFBB300CA3710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE2DD251280AFBB300CA3710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE2DD251280AFBB300CA3710 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE2DD254280AFBB300CA3710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE2DD256280AFBB500CA3710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2DD259280AFBB500CA3710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2DD25B280AFBB500CA3710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2DD266280AFEFA00CA3710 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		CE2DD268280B05D600CA3710 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE2DD26A280B05E200CA3710 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		CE2DD26C280B080300CA3710 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		CE2DD24C280AFBB300CA3710 /* CloudWiseAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				CE2DD24D280AFBB300CA3710 /* AppDelegate.swift */,
-				CE2DD24F280AFBB300CA3710 /* SceneDelegate.swift */,
-				CE2DD251280AFBB300CA3710 /* ViewController.swift */,
-				CE2DD253280AFBB300CA3710 /* Main.storyboard */,
-				CE2DD256280AFBB500CA3710 /* Assets.xcassets */,
-				CE2DD258280AFBB500CA3710 /* LaunchScreen.storyboard */,
+				CE2DD262280AFBCA00CA3710 /* Services */,
+				CE2DD261280AFBBF00CA3710 /* Models */,
+				CE2DD263280AFBD400CA3710 /* Views */,
+				CE2DD264280AFBDF00CA3710 /* Controllers */,
 				CE2DD25B280AFBB500CA3710 /* Info.plist */,
 			);
 			path = CloudWiseAssignment;
+			sourceTree = "<group>";
+		};
+		CE2DD261280AFBBF00CA3710 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD268280B05D600CA3710 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE2DD262280AFBCA00CA3710 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD26A280B05E200CA3710 /* HttpManager.swift */,
+				CE2DD24D280AFBB300CA3710 /* AppDelegate.swift */,
+				CE2DD24F280AFBB300CA3710 /* SceneDelegate.swift */,
+				CE2DD26C280B080300CA3710 /* Extensions.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE2DD263280AFBD400CA3710 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD256280AFBB500CA3710 /* Assets.xcassets */,
+				CE2DD265280AFC4E00CA3710 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE2DD264280AFBDF00CA3710 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD251280AFBB300CA3710 /* HomeViewController.swift */,
+				CE2DD266280AFEFA00CA3710 /* FormViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE2DD265280AFC4E00CA3710 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD253280AFBB300CA3710 /* Main.storyboard */,
+				CE2DD258280AFBB500CA3710 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2DD252280AFBB300CA3710 /* ViewController.swift in Sources */,
+				CE2DD252280AFBB300CA3710 /* HomeViewController.swift in Sources */,
 				CE2DD24E280AFBB300CA3710 /* AppDelegate.swift in Sources */,
+				CE2DD267280AFEFA00CA3710 /* FormViewController.swift in Sources */,
+				CE2DD26B280B05E200CA3710 /* HttpManager.swift in Sources */,
+				CE2DD269280B05D600CA3710 /* User.swift in Sources */,
 				CE2DD250280AFBB300CA3710 /* SceneDelegate.swift in Sources */,
+				CE2DD26D280B080300CA3710 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69H762Q9K9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CloudWiseAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69H762Q9K9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CloudWiseAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
